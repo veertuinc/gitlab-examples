@@ -1,4 +1,4 @@
-test1:
+test:
   stage: Ensure we're in the VM
   script:
     - hostname
