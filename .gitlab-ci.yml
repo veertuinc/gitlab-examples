@@ -1,5 +1,5 @@
 test1:
-  stage: test
+  stage: Ensure we're in the VM
   script:
-    - echo "Do a test here"
-    - echo "For example run a test suite"
+    - hostname
+    - echo "Echo from inside of the VM!"
