@@ -1,7 +1,6 @@
-job:
+test:
   tags:
     - localhost-shared
-test:
   stage: test
   script:
     - hostname
