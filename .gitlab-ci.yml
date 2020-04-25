@@ -4,6 +4,7 @@ test:
   script:
     - hostname
     - echo "Echo from inside of the VM!"
+    - sleep 10
 
 build:
   tags:
@@ -11,3 +12,4 @@ build:
   script:
     - hostname
     - echo "Echo from inside of the VM!"
+    - sleep 10
