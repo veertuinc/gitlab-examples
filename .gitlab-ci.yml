@@ -1,3 +1,6 @@
+job:
+  tags:
+    - localhost-shared
 test:
   stage: test
   script:
