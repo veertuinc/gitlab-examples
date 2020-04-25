@@ -1,5 +1,5 @@
 test:
-  stage: Ensure we're in the VM
+  stage: test
   script:
     - hostname
     - echo "Echo from inside of the VM!"
