@@ -5,3 +5,11 @@ test:
   script:
     - hostname
     - echo "Echo from inside of the VM!"
+
+build:
+  tags:
+    - localhost-specific
+  stage: build
+  script:
+    - hostname
+    - echo "Echo from inside of the VM!"
