@@ -9,14 +9,14 @@ test:
     - hostname
     - echo "Echo from inside of the VM!"
 
-    test:
-      tags:
-        - localhost-shared
-      stage: test
-      variables:
-        ANKA_TEMPLATE_UUID: "c0847bc9-5d2d-4dbc-ba6a-240f7ff08032"
-        ANKA_TAG_NAME: "base:port-forward-22:brew-git:gitlab"
-      script:
-        - [[ ! -z \\\$(grep anka.gitlab /etc/hosts) ]]
-        - hostname
-        - echo "Echo from inside of the VM!"
+test:
+  tags:
+    - localhost-shared
+  stage: test
+  variables:
+    ANKA_TEMPLATE_UUID: "c0847bc9-5d2d-4dbc-ba6a-240f7ff08032"
+    ANKA_TAG_NAME: "base:port-forward-22:brew-git:gitlab"
+  script:
+    - [[ ! -z \\\$(grep anka.gitlab /etc/hosts) ]]
+    - hostname
+    - echo "Echo from inside of the VM!"
