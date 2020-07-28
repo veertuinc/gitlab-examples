@@ -4,4 +4,6 @@
 
 [Sequential Example](https://github.com/veertuinc/gitlab-examples/tree/sequential-example)
 
+[Sequential Variables Example](https://github.com/veertuinc/gitlab-examples/tree/sequential-variables-example)
+
 [Parallel Example](https://github.com/veertuinc/gitlab-examples/tree/parallel-example)
