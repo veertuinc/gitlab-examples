@@ -16,9 +16,9 @@ test:
   needs: ["build"]
   variables:
     ANKA_TEMPLATE_UUID: "c0847bc9-5d2d-4dbc-ba6a-240f7ff08032"
-    ANKA_TAG_NAME: "base:port-forward-22:brew-git:gitlab"
+    ANKA_TAG_NAME: "base:port-forward-22:brew-git"
   script:
     - cat /etc/hosts
-    - set -x; eval "[[ -z \"\$(grep anka.gitlab /etc/hosts)\" ]] && exit 5"
+    - eval "[[ -z \"\$(grep anka.gitlab /etc/hosts)\" ]] || exit 5"
     - hostname
     - echo "Echo from inside of the VM!"
