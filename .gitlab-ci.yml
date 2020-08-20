@@ -19,6 +19,6 @@ test:
     ANKA_TAG_NAME: "base:port-forward-22:brew-git:gitlab-with-file"
   script:
     - cat /etc/hosts
-    - cat /Users/anka/test.file
+    - cat /Users/anka/Desktop/test.file
     - hostname
     - echo "Echo from inside of the VM!"
