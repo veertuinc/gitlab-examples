@@ -5,6 +5,7 @@ test:
   script:
     - hostname
     - echo "Echo from inside of the VM!"
+    - exit 1
 
 build:
   tags:
