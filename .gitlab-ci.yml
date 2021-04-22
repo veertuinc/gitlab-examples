@@ -17,6 +17,7 @@ test:
   variables:
     ANKA_TEMPLATE_UUID: "5d1b40b9-7e68-4807-a290-c59c66e926b4"
     ANKA_TAG_NAME: "v1-with-file"
+    ANKA_NODE_GROUP: "gitlab-test-group"
   script:
     - cat /etc/hosts
     - cat /Users/anka/Desktop/test.file
