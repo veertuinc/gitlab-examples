@@ -10,7 +10,7 @@ build:
   script:
     - hostname
     - echo "Echo from inside of the VM!"
-    - sleep 10
+    - sleep 120
 
 test:
   tags:
@@ -26,4 +26,4 @@ test:
     - cat /Users/anka/Desktop/test.file
     - hostname
     - echo "Echo from inside of the VM!"
-    - sleep 10
+    - sleep 120
