@@ -1,4 +1,4 @@
-test:
+build2:
   tags:
     - localhost-shared
   script:
