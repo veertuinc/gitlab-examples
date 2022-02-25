@@ -4,7 +4,7 @@ build:
   stage: build
   variables:
     ANKA_TEMPLATE_UUID: "5d1b40b9-7e68-4807-a290-c59c66e926b4"
-    ANKA_TAG_NAME: "$DEFAULT_ANKA_TAG_NAME"
+    ANKA_TAG_NAME: "v1-no-ssh"
     ANKA_CONTROLLER_INSTANCE_NAME: "testing instance name" # Defaults to "Anka Gitlab Runner Name: localhost shared runner" in Controller Instances Name column
     ANKA_CONTROLLER_EXTERNAL_ID: "external id here" # Defaults to full job URL. Example: http://anka.gitlab:8093/root/gitlab-examples/-/jobs/28
   script:
