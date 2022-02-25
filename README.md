@@ -6,4 +6,6 @@
 
 [Sequential Variables Example](https://github.com/veertuinc/gitlab-examples/tree/sequential-variables-example)
 
+[Sequential Variables Interpolation Example](https://github.com/veertuinc/gitlab-examples/tree/sequential-variable-interpolation-example)
+
 [Parallel Example](https://github.com/veertuinc/gitlab-examples/tree/parallel-example)
