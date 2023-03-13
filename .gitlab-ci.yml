@@ -1,17 +1,9 @@
 test:
   tags:
-    - localhost-shared
+    - anka-macos-vm
   stage: test
+  variables:
+    ANKA_ENABLE_JOB_DEBUG_LOGGING: "true"
   script:
     - hostname
     - echo "Echo from inside of the VM!"
-    - sleep 120
-
-build:
-  tags:
-    - localhost-specific
-  stage: build
-  script:
-    - hostname
-    - echo "Echo from inside of the VM!"
-    - sleep 120
