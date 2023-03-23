@@ -3,7 +3,8 @@ test:
     - anka-macos-vm
   stage: test
   variables:
-    ANKA_ENABLE_JOB_DEBUG_LOGGING: "true"
+    ANKA_VM_TEMPLATE: "13.2.1-gitlab"
+    ANKA_VM_TEMPLATE_TAG: "v1"
   script:
     - hostname
     - echo "Echo from inside of the VM!"
