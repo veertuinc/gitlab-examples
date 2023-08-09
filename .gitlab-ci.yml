@@ -1,6 +1,6 @@
 test:
   tags:
-    - anka-macos-vm
+    - anka-macos-vm-1
   stage: test
   # variables:
   #   ANKA_ENABLE_JOB_DEBUG_LOGGING: "false"
