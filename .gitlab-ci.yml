@@ -3,14 +3,12 @@ build:
     - localhost-shared
   stage: build
   variables:
-    ANKA_TEMPLATE_UUID: "5d1b40b9-7e68-4807-a290-c59c66e926b4"
-    ANKA_TAG_NAME: "v1"
-    ANKA_CONTROLLER_INSTANCE_NAME: "testing instance name" # Defaults to "Anka Gitlab Runner Name: localhost shared runner" in Controller Instances Name column
-    ANKA_CONTROLLER_EXTERNAL_ID: "external id here" # Defaults to full job URL. Example: http://anka.gitlab:8093/root/gitlab-examples/-/jobs/28
+    ANKA_CLOUD_TEMPLATE_ID: "c12ccfa5-8757-411e-9505-128190e9854e"
+    ANKA_CLOUD_TEMPLATE_TAG: "v1"
   script:
     - hostname
     - echo "Echo from inside of the VM!"
-    - sleep 120
+    - sleep 20
 
 test:
   tags:
@@ -18,12 +16,11 @@ test:
   stage: test
   needs: ["build"]
   variables:
-    ANKA_TEMPLATE_UUID: "5d1b40b9-7e68-4807-a290-c59c66e926b4"
-    ANKA_TAG_NAME: "v1-with-file"
-    ANKA_NODE_GROUP: "gitlab-test-group-env"
+    ANKA_CLOUD_TEMPLATE_ID: "c12ccfa5-8757-411e-9505-128190e9854e"
+    ANKA_CLOUD_TEMPLATE_TAG: "v1-with-file"
   script:
     - cat /etc/hosts
     - cat /Users/anka/Desktop/test.file
     - hostname
     - echo "Echo from inside of the VM!"
-    - sleep 120
+    - sleep 20
