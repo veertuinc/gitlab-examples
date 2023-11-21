@@ -3,7 +3,7 @@ build:
     - localhost-shared
   stage: build
   variables:
-    ANKA_CLOUD_TEMPLATE_ID: "c12ccfa5-8757-411e-9505-128190e9854e"
+    ANKA_CLOUD_TEMPLATE_ID: "5d1b40b9-7e68-4807-a290-c59c66e926b4"
     ANKA_CLOUD_TEMPLATE_TAG: "v1"
   script:
     - hostname
@@ -16,7 +16,7 @@ test:
   stage: test
   needs: ["build"]
   variables:
-    ANKA_CLOUD_TEMPLATE_ID: "c12ccfa5-8757-411e-9505-128190e9854e"
+    ANKA_CLOUD_TEMPLATE_ID: "5d1b40b9-7e68-4807-a290-c59c66e926b4"
     ANKA_CLOUD_TEMPLATE_TAG: "v1-with-file"
   script:
     - cat /etc/hosts
