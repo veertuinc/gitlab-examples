@@ -1,18 +1,7 @@
 test:
   tags:
-    - anka-macos-vm-1
+    - iOS
   stage: test
-  # variables:
-  #   ANKA_ENABLE_JOB_DEBUG_LOGGING: "false"
-  #   # ANKA_VM_INSTANCE_ID: "5829e413-7037-48ed-779b-da433bebed27"
-  #   # ANKA_VM_SSH_KEY: "~/.ssh/id_rsa"
-  #   ANKA_VM_TEMPLATE: "13.4-gitlab"
-  #   ANKA_VM_TEMPLATE_TAG: "v1"
-  #   ANKA_CONTROLLER_HTTP_HEADERS: '{ "HOST": "testing123.com", "CustomHeaderName": "test12,3" }'
-  #   ANKA_CONTROLLER_CERT_PATH: "/Users/nathanpierce/anka-build-cloud-certs/anka-controller+registry-crt.pem"
-  #   ANKA_CONTROLLER_KEY_PATH: "/Users/nathanpierce/anka-build-cloud-certs/anka-controller+registry-key.pem"
-  #   ANKA_CONTROLLER_ROOT_CA_PATH: "/Users/nathanpierce/anka-build-cloud-certs/anka-ca-crt.pem"
-  #   ANKA_CONTROLLER_SKIP_TLS_VERIFICATION: "true"
   script:
     - env
     - echo "Echo from inside of the VM!!"
